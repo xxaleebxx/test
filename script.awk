@@ -6,7 +6,7 @@ BEGIN{
          num4=0
          inexpensive=0
 }
-$4 > 30000 {inexpensive += 1}
+$4 < 30000 {inexpensive += 1}
 $5 == "hybrid" && $6 == 4 {
         num4 += 1
         sum4 += $4
