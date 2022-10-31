@@ -14,7 +14,7 @@ $5 == "hybrid" && $6 == 4 {
 
 END{
 
-        print "inepensive count = " inexpensive
+        print "inexpensive count = " inexpensive
         print "average = " (sum4 / num4)
 
 }        
