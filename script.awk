@@ -16,5 +16,4 @@ END{
 
         print "inexpensive count = " inexpensive
         print "average = " (sum4 / num4)
-
 }        
