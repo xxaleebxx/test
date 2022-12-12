@@ -13,7 +13,7 @@ int main(void){
         char *tempa;
     
         for (int i = strlen(a)-1; i > 0; i--){
-            tempa += a[i];
+            strcpy(tempa, a[i], 1);
         }
         printf("a = %s, tempa = %s", a, tempa);
    }
