@@ -10,6 +10,7 @@ int main(void){
     while (ret != EOF) {
         if (count == 1) ret = scanf("%s", a);
         else ret = scanf("%s", b);
+        count += 1;
         char *tempa;
     
         for (int i = strlen(a)-1; i > 0; i--){
