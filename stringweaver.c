@@ -12,13 +12,13 @@ int main(void){
     if (count == 1) ret = scanf("%s", a);                           
     else ret = scanf("%s", b);                                      
     char *tempa;                                                    
-    for (i = strlen(a)-1; i > 0; i--){                              
+    for (int i = strlen(a)-1; i > 0; i--){                              
       tempa += a[i];                                          
     }                                                               
     printf("a = %s, tempa = %s", a, tempa);                         
   }                                                                       
                                                                                                                    
-  free(a);                                                                
-  free(b)                                                                 
+  free(a);
+  free(b);
   return 0;                                                               
 }  
