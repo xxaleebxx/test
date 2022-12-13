@@ -7,7 +7,7 @@ BEGIN{
          retail=0
 }
 
-$4 <= 4 {
+$4 <= 3 {
          small += 1
          sum += $3
 }
