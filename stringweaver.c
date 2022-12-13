@@ -13,10 +13,11 @@ int main(void){
         if (count == 1) ret = scanf("%s", a);
         else ret = scanf("%s", b);
         count += 1;
-        char *tempa;
+        char tempa[strlen(a)-1);
     
         for (int i = strlen(a)-1; i > 0; i--){
-            strncat(tempa, *(a + i));
+            char letter = *(a+1)
+            strncat(tempa, &letter, 1);
         }
         printf("a = %s, tempa = %s", a, tempa);
    }
