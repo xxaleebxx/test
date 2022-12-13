@@ -8,7 +8,7 @@ BEGIN{
 }
 $4 > 0 {sum += 1}
 $4 <= 4 {small += 1}
-$2 == "retail"{reatil += 1}
+$2 == "retail"{retail += 1}
 
 END{
 
