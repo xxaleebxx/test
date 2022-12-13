@@ -34,7 +34,7 @@ int main(void){
             //set tempb to be reversed b
             for (int i = strlen(b)-1; i > 0; i--){
                 char letterb = substr(b, i, 1);
-                strncat(tempb, &letterb, 1);
+                strncat(tempb, letterb, 1);
             }
             printf("b = %s, tempb = %s\n", b, tempb);
 
