@@ -8,12 +8,12 @@ int main(void){
     
     char *a = (char *) malloc(sizeof(char)*max);
     char *b = (char *) malloc(sizeof(char)*max);
+    char *result = (char *) malloc(sizeof(char)*max*2);
     
     while (ret != EOF) {
         if (count == 1) ret = scanf("%s", a);
         else {
             ret = scanf("%s", b);
-            char *result = (char *) malloc(sizeof(char)*max*2);
         }
         
         
@@ -27,9 +27,7 @@ int main(void){
                 strncat(tempb, &letterb, 1);
             }
             printf("b = %s, tempb = %s\n", b, tempb);
-            
-            
-            
+
             count = 1;
         }
         else {
@@ -49,5 +47,6 @@ int main(void){
 
    free(a);
    free(b);
+   free(result);
    return 0;
 } 
