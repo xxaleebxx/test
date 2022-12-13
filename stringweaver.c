@@ -10,15 +10,23 @@ int main(void){
     char *b = (char *) malloc(sizeof(char)*max);
     char *result = (char *) malloc(sizeof(char)*max*2);
     
-    /*while (ret != EOF) {
-        if (count == 1) ret = scanf("%s", a);
+    while (ret != EOF) {
+        if (count == 1) {
+            ret = scanf("%s", a);
+            
+            char tempa[strlen(a)-1];
+     
+            //set tempa to be a reversed a
+            for (int i = strlen(a)-1; i >= 0; i--){
+                char letter = *(a+1);
+                strncat(tempa, &letter, 1);
+            }
+            printf("a = %s, tempa = %s\n", a, tempa);
+            count += 1;
+        }
         else {
             ret = scanf("%s", b);
-        }
         
-        
-        
-        if (count > 1){
             char tempb[strlen(b)-1];
             
             //set tempb to be a reversed b
@@ -30,17 +38,7 @@ int main(void){
 
             count = 1;
         }
-        else {
-            char tempa[strlen(a)-1];
-     
-            //set tempa to be a reversed a
-            for (int i = strlen(a)-1; i >= 0; i--){
-                char letter = *(a+1);
-                strncat(tempa, &letter, 1);
-            }
-            printf("a = %s, tempa = %s\n", a, tempa);
-            count += 1;
-        }
+        
         
      
    }*/
