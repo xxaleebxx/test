@@ -17,12 +17,12 @@ int main(void){
             
             char tempa[strlen(a)-1];
      
-            //set tempa to be a reversed a
+            //set tempa to be reversed a
             for (int i = strlen(a)-1; i > 0; i--){
                 char letter = *(a+1);
                 strncat(tempa, &letter, 1);
             }
-            printf("a = %s, tempa = %s", a, tempa);
+            printf("a = %s, tempa = %s\n", a, tempa);
             
             count += 1;
         }
@@ -31,12 +31,12 @@ int main(void){
             
             char tempb[strlen(b)-1];
             
-            //set tempb to be a reversed b
+            //set tempb to be reversed b
             for (int i = strlen(b)-1; i > 0; i--){
                 char letterb = *(b+1);
                 strncat(tempb, &letterb, 1);
             }
-            printf("b = %s, tempb = %s", b, tempb);
+            printf("b = %s, tempb = %s\n", b, tempb);
 
             
             count = 1;
