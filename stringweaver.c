@@ -8,6 +8,7 @@ int main(void){
     
     char *a = (char *) malloc(sizeof(char)*max);
     char *b = (char *) malloc(sizeof(char)*max);
+    char *result = (char *) malloc(sizeof(char)*max*2);
     
     while (ret != EOF) {
         if (count == 1) {
@@ -27,8 +28,7 @@ int main(void){
         }
         else {
             ret = scanf("%s", b);
-            char *result = (char *) malloc(sizeof(char)*max*2);
-        
+            
             char tempb[strlen(b)-1];
             
             //set tempb to be a reversed b
