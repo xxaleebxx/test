@@ -22,7 +22,7 @@ int main(void){
             char tempb[strlen(b)-1];
             
             //set tempb to be a reversed b
-            for (int i = strlen(b)-1; i > 0; i--){
+            for (int i = strlen(b)-1; i >= 0; i--){
                 char letterb = *(b+1);
                 strncat(tempb, &letterb, 1);
             }
@@ -34,7 +34,7 @@ int main(void){
             char tempa[strlen(a)-1];
      
             //set tempa to be a reversed a
-            for (int i = strlen(a)-1; i > 0; i--){
+            for (int i = strlen(a)-1; i >= 0; i--){
                 char letter = *(a+1);
                 strncat(tempa, &letter, 1);
             }
