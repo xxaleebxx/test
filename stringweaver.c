@@ -20,8 +20,8 @@ int main(void){
      
             //set tempa to be reversed a
             for (int i = strlen(a)-1; i > 0; i--){
-                //char letter = *(a+1);
-                strncat(tempa, substr(a, i, 1), 1);
+                char letter = *(a+i);
+                strncat(tempa, letter, 1);
             }
             printf("a = %s, tempa = %s\n", a, tempa);
             
@@ -34,8 +34,8 @@ int main(void){
             
             //set tempb to be reversed b
             for (int i = strlen(b)-1; i > 0; i--){
-                //char letterb = substr(b, i, 1);
-                strncat(tempb, substr(b, i, 1), 1);
+                char letterb = *(b+i);
+                strncat(tempb, letterb, 1);
             }
             printf("b = %s, tempb = %s\n", b, tempb);
 
