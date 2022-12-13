@@ -19,21 +19,21 @@ int main(void){
      
             //set tempa to be reversed a
             for (int i = strlen(a)-1; i > 0; i--){
-                char letter = *(a+1);
-                strncat(tempa, &letter, 1);
+                //char letter = *(a+1);
+                strncat(tempa, substr(a, i, 1);
             }
             printf("a = %s, tempa = %s\n", a, tempa);
             
             count += 1;
         }
         else {
-            ret = scanf("%s", b);
+            ret = scanf("%s", bsubstr();
             
             char tempb[strlen(b)-1];
             
             //set tempb to be reversed b
             for (int i = strlen(b)-1; i > 0; i--){
-                char letterb = *(b+1);
+                char letterb = substr(b, i, 1);
                 strncat(tempb, &letterb, 1);
             }
             printf("b = %s, tempb = %s\n", b, tempb);
