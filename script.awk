@@ -6,9 +6,9 @@ BEGIN{
          sum=0
          retail=0
 }
-$4 > 0 {sum += 1}
-$4 <= 4 {small += 1}
-$2 == "retail"{retail += 1}
+$3 > 0 {sum += 1}
+$3 <= 4 {small += 1}
+$1 == "retail"{retail += 1}
 
 END{
 
