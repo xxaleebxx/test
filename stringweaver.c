@@ -41,7 +41,7 @@ int main(void){
         
         
      
-   }*/
+   }
 
    free(a);
    free(b);
