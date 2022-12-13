@@ -11,27 +11,33 @@ int main(void){
     
     while (ret != EOF) {
         if (count == 1) ret = scanf("%s", a);
-        else ret = scanf("%s", b);
+        else {
+            ret = scanf("%s", b);
+            char *result = (char *) malloc(sizeof(char)*max*2);
+        }
         count += 1;
-        char tempa[strlen(a)-1);
+        char tempa[strlen(a)-1];
+     
     
         for (int i = strlen(a)-1; i > 0; i--){
-            char letter = *(a+1)
+            char letter = *(a+1);
             strncat(tempa, &letter, 1);
         }
         printf("a = %s, tempa = %s", a, tempa);
         
-        char tempb[strlen(b)-1);
+        if (count > 1){
+            char tempb[strlen(b)-1);
     
-        for (int i = strlen(b)-1; i > 0; i--){
-            char letterb = *(b+1)
-            strncat(tempb, &letterb, 1);
+            for (int i = strlen(b)-1; i > 0; i--){
+                char letterb = *(b+1);
+                strncat(tempb, &letterb, 1);
+            }
+            printf("b = %s, tempb = %s", b, tempb);
+            
+        
         }
-        printf("b = %s, tempb = %s", b, tempb);
         
-        count = 0;
-        
-        
+     
    }
 
    free(a);
