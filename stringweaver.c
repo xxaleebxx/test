@@ -15,7 +15,7 @@ int main(void){
             ret = scanf("%s", b);
             char *result = (char *) malloc(sizeof(char)*max*2);
         }
-        count += 1;
+        
         char tempa[strlen(a)-1];
      
         //set tempa to be a reversed a
@@ -39,6 +39,7 @@ int main(void){
             
             count = 1;
         }
+        else count += 1;
         
      
    }
