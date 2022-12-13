@@ -34,7 +34,9 @@ int main(void){
             }
             printf("b = %s, tempb = %s", b, tempb);
             
-        
+            
+            
+            count = 1;
         }
         
      
