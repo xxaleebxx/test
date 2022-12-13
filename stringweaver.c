@@ -20,6 +20,18 @@ int main(void){
             strncat(tempa, &letter, 1);
         }
         printf("a = %s, tempa = %s", a, tempa);
+        
+        char tempb[strlen(b)-1);
+    
+        for (int i = strlen(b)-1; i > 0; i--){
+            char letterb = *(b+1)
+            strncat(tempb, &letterb, 1);
+        }
+        printf("b = %s, tempb = %s", b, tempb);
+        
+        count = 0;
+        
+        
    }
 
    free(a);
