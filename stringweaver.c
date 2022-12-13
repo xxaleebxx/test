@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 int main(void){
     int max = 100;
     int ret = EOF +1;
@@ -27,8 +28,8 @@ int main(void){
             count += 1;
         }
         else {
-            ret = scanf("%s", b);
             
+            ret = scanf("%s", b);
             char tempb[strlen(b)-1];
             
             //set tempb to be reversed b
@@ -38,12 +39,9 @@ int main(void){
             }
             printf("b = %s, tempb = %s\n", b, tempb);
 
-            
             count = 1;
         }
-        
-        
-     
+ 
    }
 
    free(a);
