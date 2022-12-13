@@ -20,14 +20,14 @@ int main(void){
             //set tempa to be reversed a
             for (int i = strlen(a)-1; i > 0; i--){
                 //char letter = *(a+1);
-                strncat(tempa, substr(a, i, 1);
+                strncat(tempa, substr(a, i, 1), 1);
             }
             printf("a = %s, tempa = %s\n", a, tempa);
             
             count += 1;
         }
         else {
-            ret = scanf("%s", bsubstr();
+            ret = scanf("%s", b);
             
             char tempb[strlen(b)-1];
             
