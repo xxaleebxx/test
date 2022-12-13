@@ -6,8 +6,11 @@ BEGIN{
          sum=0
          retail=0
 }
-$4 > 0 {sum += 1}
-$4 <= 4 {small += 1}
+
+$4 <= 4 {
+         small += 1
+         sum += $3
+}
 $2 == "retail"{retail += 1}
 
 END{
