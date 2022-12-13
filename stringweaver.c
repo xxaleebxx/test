@@ -23,7 +23,7 @@ int main(void){
             
             //set tempb to be a reversed b
             for (int i = strlen(b)-1; i > 0; i--){
-                char letterb = *(b+i);
+                char letterb = *(b+1);
                 strncat(tempb, &letterb, 1);
             }
             printf("b = %s, tempb = %s\n", b, tempb);
@@ -35,7 +35,7 @@ int main(void){
      
             //set tempa to be a reversed a
             for (int i = strlen(a)-1; i > 0; i--){
-                char letter = *(a+i);
+                char letter = *(a+1);
                 strncat(tempa, &letter, 1);
             }
             printf("a = %s, tempa = %s\n", a, tempa);
